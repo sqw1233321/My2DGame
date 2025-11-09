@@ -1,0 +1,24 @@
+{
+  "name": "cocos_nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch ./apps/server/src --exec ts-node ./apps/server/src/index -e ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqw1233321/My2DGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqw1233321/My2DGame/issues"
+  },
+  "homepage": "https://github.com/sqw1233321/My2DGame#readme",
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
