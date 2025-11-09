@@ -3,8 +3,16 @@ import path from "path";
 
 //symlink同步
 export const symlinkCommon = async () => {
-  const src = path.resolve(__dirname, "../Common");
-  const dst = path.resolve(__dirname, "../../../client/assets/Scripts/Common");
+  const paths = ["Common", "Enum"]
+  paths.forEach(async p => {
+    symlink(p);
+  })
+
+};
+
+const symlink = async (p: string) => {
+  const src = path.resolve(__dirname, `../${p}`);
+  const dst = path.resolve(__dirname, `../../../client/assets/Scripts/${p}`);
 
   if (
     (await fs
@@ -23,4 +31,6 @@ export const symlinkCommon = async () => {
         console.log("同步失败！", e);
       });
   }
-};
+}
+
+symlinkCommon();

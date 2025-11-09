@@ -72,3 +72,5 @@ export interface IExplosion {
     bulletId: number,
     pos: Ivec2
 }
+
+

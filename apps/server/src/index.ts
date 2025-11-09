@@ -1,7 +1,5 @@
 import { WebSocketServer } from "ws";
 import { ApiMsgEnum } from "./Common";
-import { symlinkCommon } from "./Utils";
-symlinkCommon();
 const wss = new WebSocketServer({ port: 9876 });
 
 let inputDatas = [];

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch ./apps/server/src --exec ts-node ./apps/server/src/index -e ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "symLink": "nodemon --exec ts-node ./apps/server/src/utils/index -e ts"
   },
   "repository": {
     "type": "git",
