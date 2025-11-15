@@ -1,18 +1,18 @@
-import { _decorator, Component, instantiate, Node, Prefab } from 'cc';
-import DataManager from '../Global/DataManager';
-import { JoyStickManager } from '../UI/JoyStickManager';
-import { PrefabId, PrefabPath } from '../Enum/PrefabEnum';
-import { ActorManager } from '../Entity/Actor/ActorManager';
-import { ResourceManager } from '../Global/ResourceManager';
-import { TexturePath } from '../Enum/TextureEnum';
-import { SpriteFrame } from 'cc';
-import { WeaponManager } from '../Entity/Weapon/WeaponManager';
-import { BulletManager } from '../Entity/Bullet/BulletManager';
-import { IBulletState, IClientInput, IExplosionState, ITimePast } from '../Common/State';
-import { ApiMsgEnum, EventEnum, InputType } from '../Enum';
-import EventManager from '../Global/EventManager';
-import { ExplosionManager } from '../Entity/Explosion/ExplosionManager';
-import { NetWorkManager } from '../Global/NetWorkManager';
+import { _decorator, Component, Prefab, SpriteFrame, instantiate,Node } from "cc";
+import { IClientInput, ITimePast, IBulletState, IExplosionState } from "../Common/State";
+import { ActorManager } from "../Entity/Actor/ActorManager";
+import { BulletManager } from "../Entity/Bullet/BulletManager";
+import { ExplosionManager } from "../Entity/Explosion/ExplosionManager";
+import { WeaponManager } from "../Entity/Weapon/WeaponManager";
+import { EventEnum, ApiMsgEnum, InputType } from "../Enum";
+import { PrefabPath, PrefabId } from "../Enum/PrefabEnum";
+import { TexturePath } from "../Enum/TextureEnum";
+import DataManager from "../Global/DataManager";
+import EventManager from "../Global/EventManager";
+import { NetWorkManager } from "../Global/NetWorkManager";
+import { ResourceManager } from "../Global/ResourceManager";
+import { JoyStickManager } from "../UI/JoyStickManager";
+
 const { ccclass, property } = _decorator;
 
 @ccclass('BattleManager')

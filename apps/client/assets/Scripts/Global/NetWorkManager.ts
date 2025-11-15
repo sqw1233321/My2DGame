@@ -13,7 +13,7 @@ export class NetWorkManager extends Singleton {
         return super.GetInstance<NetWorkManager>();
     }
 
-    private _prot = 9876;
+    private _prot = 9877;
     private _wss: WebSocket;
     private _map: Map<string, Array<IItem>> = new Map();
 

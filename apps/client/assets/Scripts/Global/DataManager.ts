@@ -1,11 +1,11 @@
-import { Prefab } from "cc";
+import { Prefab, SpriteFrame } from "cc";
 import Singleton from "../Base/Singleton";
-import { EventEnum, InputType, StateMachineType } from "../Enum";
-import { IClientInput, IState, IBulletState, IActorMove, IShoot, ITimePast, IExplosion, IExplosionState } from "../Common/State";
-import { JoyStickManager } from "../UI/JoyStickManager";
+import { IState, IClientInput, IActorMove, IShoot, IExplosion, ITimePast, IBulletState, IExplosionState } from "../Common/State";
+import { StateMachineType, InputType, EventEnum } from "../Enum";
 import { PrefabId } from "../Enum/PrefabEnum";
-import { SpriteFrame } from "cc";
+import { JoyStickManager } from "../UI/JoyStickManager";
 import EventManager from "./EventManager";
+
 
 const Actor_Speed = 100;
 const Bullet_Speed = 600;
